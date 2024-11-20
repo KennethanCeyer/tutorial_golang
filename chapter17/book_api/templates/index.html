@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>책 목록</title>
+  </head>
+  <body>
+    <h1>책 목록</h1>
+    <ul>
+      {{range .Books}}
+      <li>{{.Title}} - {{.Author}} ({{.Year}})</li>
+      {{end}}
+    </ul>
+  </body>
+</html>
